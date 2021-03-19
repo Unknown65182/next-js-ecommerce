@@ -20,18 +20,24 @@ const ColorsType = () => {
 
   // Get Colors and text variants
   useEffect(async () => {
-    await fetch("/data/colors.json")
-      .then((res) => res.json())
-      .then((data) => setColors(data.colors));
-    await fetch("/data/text_variants.json")
-      .then((res) => res.json())
-      .then((data) => setTextVariants(data.text_variants));
+    const getColors = async () => {
+      await fetch("/data/colors.json")
+        .then((res) => res.json())
+        .then((data) => setColors(data.colors));
+    };
+    const getText = async () => {
+      await fetch("/data/text_variants.json")
+        .then((res) => res.json())
+        .then((data) => setTextVariants(data.text_variants));
+    };
+    getColors();
+    getText();
   }, []);
 
   return (
     <>
       <Head>
-        <title>Toxin</title>
+        <title>Toxin | ColorsType</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
