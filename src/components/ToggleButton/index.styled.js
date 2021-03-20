@@ -51,4 +51,5 @@ export const Label = styled.label`
   line-height: 24px;
   color: var(--dark-shade);
   opacity: 75%;
+  cursor: pointer;
 `;
