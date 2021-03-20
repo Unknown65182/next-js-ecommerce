@@ -65,7 +65,7 @@ const ColorsType = () => {
                     size={variant.size}
                     weight={variant.weight}
                     lineHeight={variant.lineHeight}
-                    opacity={index === textVariants.length - 1 ? "75%" : "100%"}
+                    opacity={index === textVariants.length - 1 ? 0.75 : 1}
                   >
                     {variant.tag === "H3"
                       ? variant.example.toUpperCase()

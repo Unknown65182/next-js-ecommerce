@@ -53,7 +53,7 @@ export const Tag = styled.p`
   line-height: ${(props) => props.lineHeight};
   margin-right: 30px;
   color: #1f2041;
-  opacity: 25%;
+  opacity: 0.25;
   width: 37px;
   text-align: end;
 `;
