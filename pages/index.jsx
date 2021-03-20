@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Layout from "../src/layouts";
 import LikeButton from "../src/components/LikeButton";
+import ToggleButton from "../src/components/ToggleButton";
 
 export default function Home() {
   return (
@@ -29,6 +30,11 @@ export default function Home() {
           <br />
           <LikeButton actived />
           <LikeButton />
+          <br />
+          <ToggleButton actived label="Получать спецпредложения" />
+          <ToggleButton label="Получать спецпредложения" />
+          <ToggleButton actived />
+          <ToggleButton />
         </main>
       </Layout>
     </>
