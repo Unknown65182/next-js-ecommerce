@@ -1,12 +1,18 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.label`
   display: flex;
-  align-items: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--dark-shade-75);
+  cursor: pointer;
 `;
 export const Toggle = styled.input`
   appearance: none;
   position: relative;
+  margin-right: 10px;
+  margin-top: 4px;
   display: inline-block;
   min-width: 40px;
   height: 20px;
@@ -41,12 +47,4 @@ export const Toggle = styled.input`
   &:checked {
     border: 1px solid var(--purple);
   }
-`;
-export const Label = styled.label`
-  margin-left: 10px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  color: var(--dark-shade-75);
-  cursor: pointer;
 `;

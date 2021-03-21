@@ -1,13 +1,18 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.label`
   display: flex;
-  align-items: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--dark-shade-50);
+  cursor: pointer;
 `;
+
 export const Icon = styled.input`
   appearance: none;
   position: relative;
-  display: inline-block;
+  margin-right: 10px;
   min-width: 20px;
   height: 20px;
   background: var(--white);
@@ -47,12 +52,4 @@ export const Icon = styled.input`
   &:checked {
     border: 1px solid var(--purple);
   }
-`;
-export const Label = styled.label`
-  margin-left: 10px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  color: var(--dark-shade);
-  cursor: pointer;
 `;

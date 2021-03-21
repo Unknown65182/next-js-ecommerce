@@ -1,9 +1,7 @@
 import { useState } from "react";
-import _uniqueId from "lodash/uniqueId";
-import { Wrapper, Icon, Label } from "./index.styled";
+import { Wrapper, Icon } from "./index.styled";
 
 const CheckboxButton = ({ actived, label }) => {
-  const [id] = useState(() => _uniqueId("checkbox_id_"));
   const [active, setActive] = useState(actived ?? false);
   const handleCheck = () => {
     setActive(!active);
@@ -11,13 +9,8 @@ const CheckboxButton = ({ actived, label }) => {
 
   return (
     <Wrapper>
-      <Icon
-        checked={active}
-        type="checkbox"
-        id={id}
-        onChange={() => handleCheck()}
-      />
-      <Label htmlFor={id}>{label}</Label>
+      <Icon checked={active} type="checkbox" onChange={() => handleCheck()} />
+      {label}
     </Wrapper>
   );
 };

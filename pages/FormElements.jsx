@@ -9,6 +9,7 @@ import {
 } from "../src/styles/FormElements.styled";
 import {
   CheckboxButton,
+  RadioButtons,
   ToggleButton,
   LikeButton,
   BulletList,
@@ -42,6 +43,10 @@ const FormElements = () => {
                     label="Можно пригласить гостей (до 10 человек)"
                   />
                 </GroupButtons>
+              </Component>
+              <Component>
+                <Title>Radio Buttons</Title>
+                <RadioButtons name="gender" values={["Мужчина", "Женщина"]} />
               </Component>
               <Component>
                 <Title>Toggle</Title>

@@ -1,9 +1,7 @@
 import { useState } from "react";
-import _uniqueId from "lodash/uniqueId";
-import { Wrapper, Toggle, Label } from "./index.styled";
+import { Wrapper, Toggle } from "./index.styled";
 
 const ToggleButton = ({ actived, label }) => {
-  const [id] = useState(() => _uniqueId("toggle_id_"));
   const [active, setActive] = useState(actived ?? false);
   const handleToggle = () => {
     setActive(!active);
@@ -13,10 +11,9 @@ const ToggleButton = ({ actived, label }) => {
       <Toggle
         checked={active}
         type="checkbox"
-        id={id}
         onChange={() => handleToggle()}
       />
-      <Label htmlFor={id}>{label}</Label>
+      {label}
     </Wrapper>
   );
 };
