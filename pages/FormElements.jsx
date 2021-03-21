@@ -27,7 +27,6 @@ const FormElements = () => {
     <>
       <Head>
         <title>Toxin | FormElements</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
         <Wrapper>
