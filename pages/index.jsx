@@ -7,11 +7,9 @@ export default function Home() {
     <>
       <Head>
         <title>Toxin</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
         <main>
-          44444
           <ul>
             <li>
               <Link href="/ColorsType">Colors & Type</Link>
