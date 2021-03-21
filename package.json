@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build --analyze",
+    "build": "next build",
     "start": "next start",
     "analyze": "cross-env ANALYZE=true next build",
     "analyze:server": "cross-env BUNDLE_ANALYZE=server next build",
@@ -14,7 +14,8 @@
     "next": "10.0.9",
     "react": "17.0.1",
     "react-dom": "17.0.1",
-    "styled-components": "^5.2.1"
+    "styled-components": "^5.2.1",
+    "swr": "^0.5.4"
   },
   "devDependencies": {
     "@next/bundle-analyzer": "^10.0.9",
