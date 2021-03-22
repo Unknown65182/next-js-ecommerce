@@ -16,6 +16,10 @@ export const Icon = styled.span`
   flex: 0 0 50%;
   font-size: 10px;
   line-height: 9px;
+  display: block;
+  max-width: 20px;
+  max-height: 20px;
+  overflow: hidden;
   background: linear-gradient(var(--purple), var(--blue));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

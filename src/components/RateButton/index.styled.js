@@ -5,8 +5,10 @@ export const Wrapper = styled.div`
 `;
 
 export const Icon = styled.span`
-  min-width: 24px;
-  height: 24px;
+  display: block;
+  max-width: 24px;
+  max-height: 24px;
+  overflow: hidden;
   background: linear-gradient(var(--purple), var(--blue));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
