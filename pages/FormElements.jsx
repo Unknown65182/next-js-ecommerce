@@ -31,10 +31,10 @@ const FormElements = () => {
       <Layout>
         <Wrapper>
           <Row>
-            <Column>4444</Column>
+            <Column>1</Column>
             <Column>
               <Component>
-                <Title>Checkbox Buttons 4444</Title>
+                <Title>Checkbox Buttons</Title>
                 <GroupButtons>
                   <CheckboxButton label="Можно курить" />
                   <CheckboxButton actived label="Можно с питомцами" />

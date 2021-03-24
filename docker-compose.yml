@@ -1,0 +1,29 @@
+version: "3.7"
+
+x-common-props: &common-props
+  build:
+    context: ./
+    target: base
+  working_dir: /usr/base
+  volumes:
+    - ./:/usr/base
+    - node_modules:/usr/base/node_modules
+
+services:
+  yarn:
+    <<: *common-props
+    entrypoint: yarn
+  dev:
+    <<: *common-props
+    ports:
+      - "3000:3000"
+    command: yarn dev
+  prod:
+    ports:
+      - "3000:3000"
+    build:
+      context: ./
+      target: production
+
+volumes:
+  node_modules:
