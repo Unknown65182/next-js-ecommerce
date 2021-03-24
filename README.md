@@ -1,4 +1,4 @@
-[![GitHub license](https://img.shields.io/github/license/Unknown65182/toxin.js.svg)](https://https://github.com/Unknown65182/toxin/blob/master/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/Unknown65182/toxin.js.svg)](https://github.com/Unknown65182/toxin/blob/master/LICENSE)
 
 https://toxin.vercel.app/
 
