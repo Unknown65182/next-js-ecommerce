@@ -12,5 +12,6 @@ export const Icon = styled.span`
   background: linear-gradient(var(--purple), var(--blue));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  user-select: none;
   cursor: pointer;
 `;

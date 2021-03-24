@@ -1,3 +1,5 @@
+[![GitHub license](https://img.shields.io/github/license/Unknown65182/toxin.js.svg)](https://https://github.com/Unknown65182/toxin/blob/master/LICENSE)
+
 https://toxin.vercel.app/
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
