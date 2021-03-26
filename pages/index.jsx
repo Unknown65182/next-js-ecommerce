@@ -10,7 +10,9 @@ export default function Home() {
       </Head>
       <Layout>
         <main>
-          <ul>
+          <Link href="/SignIn">SignIn</Link>
+          <Link href="/">SignOut</Link>
+          {/* <ul>
             <li>
               <Link href="/ColorsType">Colors & Type</Link>
             </li>
@@ -23,7 +25,7 @@ export default function Home() {
             <li>
               <Link href="/HeadersFooters">Headers & Footers</Link>
             </li>
-          </ul>
+          </ul> */}
         </main>
       </Layout>
     </>

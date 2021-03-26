@@ -1,5 +1,6 @@
 import { Wrapper } from "../src/styles/Cards.styled";
 
+import Layout from "../src/layouts";
 import {
   SignIn,
   Card,
@@ -10,11 +11,13 @@ import {
 
 const Cards = () => {
   return (
-    <Wrapper>
-      <h1>cards</h1>
+    <Layout>
+      <Wrapper>
+        <h1>cards</h1>
 
-      <SignIn />
-    </Wrapper>
+        <SignIn />
+      </Wrapper>
+    </Layout>
   );
 };
 

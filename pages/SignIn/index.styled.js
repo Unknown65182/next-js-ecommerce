@@ -10,6 +10,10 @@ export const Title = styled.h1`
 export const Form = styled.form`
   display: flex;
   flex-direction: column;
+
+  & > * {
+    margin-bottom: 20px;
+  }
 `;
 
 export const NotAccount = styled.div`

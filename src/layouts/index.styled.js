@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
   flex-direction: column;
   align-items: flex-start;
   padding: 30px;
-  overflow: hidden;
+  /* overflow: hidden; */
 `;
 
 export const Content = styled.div`

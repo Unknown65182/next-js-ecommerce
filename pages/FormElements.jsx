@@ -8,6 +8,7 @@ import {
   Title,
 } from "../src/styles/FormElements.styled";
 import {
+  Button,
   TextField,
   CheckboxButton,
   RadioButtons,
@@ -80,7 +81,16 @@ const FormElements = () => {
                 </GroupButtons>
               </Component>
             </Column>
-            <Column>3</Column>
+            <Column>
+              <Component>
+                <Title>Buttons</Title>
+                <GroupButtons>
+                  <Button>Click Me</Button>
+                  <Button outlined>Click Me</Button>
+                  <Button actioned>Click Me</Button>
+                </GroupButtons>
+              </Component>
+            </Column>
           </Row>
           <Row>
             <Column>4</Column>
