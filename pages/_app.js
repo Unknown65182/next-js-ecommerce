@@ -2,6 +2,7 @@ import "normalize.css";
 import "../src/styles/globals.css";
 import Head from "next/head";
 import { useRouter } from "next/router";
+import { Provider } from "next-auth/client";
 
 function Toxin({ Component, pageProps }) {
   const router = useRouter();
@@ -43,7 +44,9 @@ function Toxin({ Component, pageProps }) {
           onLoad="this.media='all'"
         />
       </Head>
-      <Component {...pageProps} />
+      <Provider session={pageProps.session}>
+        <Component {...pageProps} />
+      </Provider>
     </>
   );
 }

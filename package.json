@@ -11,9 +11,9 @@
     "analyze:browser": "cross-env BUNDLE_ANALYZE=browser next build"
   },
   "dependencies": {
+    "mongodb": "^3.6.5",
     "next": "10.0.9",
     "next-auth": "^3.13.3",
-    "next-google-fonts": "^2.1.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "styled-components": "^5.2.1",

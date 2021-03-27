@@ -10,6 +10,12 @@ module.exports = withBundleAnalyzer({
         "process.env.BUILD_ID": JSON.stringify(buildId),
       })
     );
+    if (!isServer) {
+      config.node = {
+        fs: "empty",
+        module: "empty",
+      };
+    }
     return config;
   },
   webpackDevMiddleware: (config) => {
